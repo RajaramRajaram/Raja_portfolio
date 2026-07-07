@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Rajaram — Junior Developer</title>
+  <meta name="description"
+    content="Portfolio of S. Rajaram, a junior full-stack and React Native developer from Chennai, India, and co-host of the Tamil-language coding channel CodeKural." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="nav__brand">
+        <span class="nav__mark">SR</span>
+        <span class="nav__name">S. Rajaram</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" class="nav__link" data-nav>About</a>
+        <a href="#skills" class="nav__link" data-nav>Skills</a>
+        <a href="#experience" class="nav__link" data-nav>Experience</a>
+        <a href="#projects" class="nav__link" data-nav>Work</a>
+        <a href="#certifications" class="nav__link" data-nav>Certifications</a>
+        <a href="#contact" class="nav__link nav__link--cta" data-nav>Contact</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks"
+        aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Junior Developer · Chennai, Tamil Nadu</p>
+          <h1 class="hero__title">S. Rajaram</h1>
+          <p class="hero__lede">I build web and mobile apps — and once a week, I help explain how code works to
+            CodeKural's Tamil-speaking audience of students and freshers.</p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">See my work</a>
+            <!-- <a href="mailto:rajarams7200@gmail.com" class="btn btn--ghost">Say hello</a> -->
+            <a href="Rajaram_Resume.pdf" class="btn btn--primary2">
+              <!-- <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg> -->
+              Resume
+            </a>
+          </div>
+
+          <p class="hero__status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to entry-level developer roles
+          </p>
+        </div>
+
+        <div class="hero__panel" data-reveal>
+          <div class="code-window" aria-hidden="true">
+            <div class="code-window__bar">
+              <span class="code-window__dots"><i></i><i></i><i></i></span>
+              <span class="code-window__title">rajaram.json</span>
+            </div>
+            <pre class="code-window__body"><code><span class="code-line" style="--d:1">{</span>
+<span class="code-line" style="--d:2">  <span class="tok-key">"name"</span>: <span class="tok-str">"S. Rajaram"</span>,</span>
+<span class="code-line" style="--d:3">  <span class="tok-key">"role"</span>: <span class="tok-str">"Junior Developer"</span>,</span>
+<span class="code-line" style="--d:4">  <span class="tok-key">"based_in"</span>: <span class="tok-str">"Chennai, India"</span>,</span>
+<span class="code-line" style="--d:5">  <span class="tok-key">"stack"</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"React Native"</span>, <span class="tok-str">"Java"</span>, <span class="tok-str">"Python"</span>],</span>
+<span class="code-line" style="--d:6">  <span class="tok-key">"currently"</span>: <span class="tok-str">"React Native Dev @ SyntLang"</span>,</span>
+<span class="code-line" style="--d:7">  <span class="tok-key">"side_project"</span>: <span class="tok-str">"Hosting CodeKural on YouTube"</span>,</span>
+<span class="code-line" style="--d:8">  <span class="tok-key">"status"</span>: <span class="tok-str">"open_to_opportunities"</span></span>
+<span class="code-line" style="--d:9">}<span class="cursor" aria-hidden="true"></span></span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">About</p>
+        <p class="couplet">Two years of campus projects, one Tamil-language channel —<br />built so a stranger's first
+          line of code goes easier than mine did.</p>
+
+        <div class="about__grid" data-reveal>
+          <p class="about__text">
+            I'm an enthusiastic computer science graduate with a foundation in web and software development, and a habit
+            of finishing what I start — from a React Native app for booking mechanics nearby, to a Tamil-language
+            channel that walks students through their first steps in IT. I'm looking for an entry-level role where I can
+            keep building useful, user-friendly software as part of a team.
+          </p>
+          <ul class="about__facts">
+            <li><span>Based in</span>Mylapore, Chennai</li>
+            <li><span>Education</span>B.E. Computer Science, GKM College of Engineering &amp; Technology</li>
+            <li><span>Currently</span>React Native Developer at SyntLang</li>
+            <li><span>Also</span>Co-Creator &amp; Host, CodeKural</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section__title">What I work with</h2>
+
+        <div class="skills__grid" data-reveal>
+          <div class="skill-card">
+            <h3>Web Development</h3>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js (Basic)</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3>App Development</h3>
+            <div class="tags"><span>React Native</span><span>Frappe</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
+            <div class="tags"><span>Java</span><span>Python</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <div class="tags"><span>MongoDB</span><span>Firebase</span><span>Convex</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <div class="tags"><span>WordPress</span><span>Figma</span><span>Postman</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Soft Skills</h3>
+            <div class="tags"><span>Team Worker</span><span>Self-Motivator</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section__title">Where I've worked</h2>
+
+        <ol class="timeline" data-reveal>
+          <li class="timeline__item">
+            <div class="timeline__date">Nov 2025 — Present</div>
+            <div class="timeline__content">
+              <h3>React Native Developer</h3>
+              <p class="timeline__org">SyntLang</p>
+              <p>Working as a React Native developer since November, building mobile features end to end.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section__title">Things I've built</h2>
+
+        <div class="projects__grid" data-reveal>
+
+          <article class="project-card">
+            <span class="project-card__tag">Team project · 2025</span>
+            <h3>Gearsmiths</h3>
+            <p>A fully functional Android app, built with two teammates, for finding and booking nearby mechanics based
+              on the user's location.</p>
+            <div class="tags tags--small"><span>React</span><span>Firebase</span><span>Google
+                APIs</span><span>Expo</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__tag">App · 2025</span>
+            <h3>Beauty Parlour App</h3>
+            <p>An app for a beauty parlour to keep track of clients, store their details, and add invoices for each one.
+            </p>
+            <div class="tags tags--small"><span>React</span><span>Firebase</span><span>Expo</span></div>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__tag">Website · 2025</span>
+            <h3>Packers &amp; Movers Website</h3>
+            <p>A company site covering the business's story and services, with a form for customers to send appointment
+              details.</p>
+            <div class="tags tags--small"><span>Web</span></div>
+            <a class="project-card__link" href="https://sspackersandmovers.netlify.app/" target="_blank"
+              rel="noopener noreferrer">
+              View live site
+              <svg viewBox="0 0 24 24" class="icon icon--sm" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <span class="project-card__tag">Training program · 2025</span>
+            <h3>Java Full Stack Development</h3>
+            <p>A 3-month training program at Tata Strive covering Java, Spring Boot, MySQL, and front-end basics through
+              hands-on projects.</p>
+            <div class="tags tags--small"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React /
+                Angular</span></div>
+          </article>
+
+          <article class="project-card project-card--feature">
+            <span class="project-card__tag">YouTube · Ongoing</span>
+            <h3>CodeKural</h3>
+            <p>A Tamil-language channel I co-create and host with peers, helping students and freshers learn IT skills,
+              coding, and career growth tips.</p>
+            <div class="tags tags--small"><span>Teaching</span><span>Tamil</span><span>Community</span></div>
+            <a class="project-card__link" href="https://www.youtube.com/@CodeKural" target="_blank"
+              rel="noopener noreferrer">
+              View channel
+              <svg viewBox="0 0 24 24" class="icon icon--sm" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+        </div>
+
+        <p class="section__footnote">Also behind the scenes: Selenium &amp; React projects through Naan Mudhalvan, a few
+          WordPress builds, and regular practice on HackerRank and LeetCode.</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <p class="eyebrow">Certifications</p>
+        <h2 class="section__title">Courses &amp; certifications</h2>
+
+        <div class="cert__grid" data-reveal>
+          <div class="cert-card">
+            <p class="cert-card__date">Apr 2025</p>
+            <h3>Cloud Computing</h3>
+            <p class="cert-card__issuer">NPTEL · IIT</p>
+          </div>
+          <div class="cert-card">
+            <p class="cert-card__date">Mar 2025</p>
+            <h3>DSA in Python</h3>
+            <p class="cert-card__issuer">NPTEL · IIT</p>
+          </div>
+          <div class="cert-card">
+            <p class="cert-card__date">Nov 2024</p>
+            <h3>Java</h3>
+            <p class="cert-card__issuer">NPTEL · IIT</p>
+          </div>
+          <div class="cert-card">
+            <p class="cert-card__date">Sept 2023</p>
+            <h3>Computer Graphics</h3>
+            <p class="cert-card__issuer">NPTEL · IIT</p>
+          </div>
+        </div>
+        <p class="section__footnote">Plus several additional online course certifications.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <p class="eyebrow">Education</p>
+        <h2 class="section__title">Academic background</h2>
+
+        <div class="edu__grid" data-reveal>
+          <div class="edu-card">
+            <p class="edu-card__date">2021 — 2025</p>
+            <h3>B.E. Computer Science</h3>
+            <p class="edu-card__org">GKM College of Engineering and Technology</p>
+            <p class="edu-card__meta">CGPA: 8.25</p>
+          </div>
+          <div class="edu-card">
+            <p class="edu-card__date">2020 — 2021</p>
+            <h3>HSLC</h3>
+            <p class="edu-card__org">Gill Adarsh Mat. Hr. Sec. School</p>
+            <p class="edu-card__meta">84.88%</p>
+          </div>
+          <div class="edu-card">
+            <p class="edu-card__date">2018 — 2019</p>
+            <h3>SSLC</h3>
+            <p class="edu-card__org">Gill Adarsh Mat. Hr. Sec. School</p>
+            <p class="edu-card__meta">76.2%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__intro">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section__title">Let's build something</h2>
+        <p>Open to entry-level developer roles and collaborations — reach out anytime.</p>
+      </div>
+
+      <div class="footer__details">
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" />
+            <path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+          <a href="mailto:rajarams7200@gmail.com">rajarams7200@gmail.com</a>
+          <button class="copy-btn" id="copyEmailBtn" type="button" data-copy="rajarams7200@gmail.com">Copy</button>
+        </div>
+
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path d="M5 4h3l1.5 4.5L7 10.5a12 12 0 006.5 6.5l1.5-2.5L19.5 16v3a1 1 0 01-1 1A14 14 0 014 5a1 1 0 011-1z"
+              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+          </svg>
+          <a href="tel:+917200484930">+91 72004 84930</a>
+        </div>
+
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path d="M12 21s7-7.2 7-12a7 7 0 10-14 0c0 4.8 7 12 7 12z" fill="none" stroke="currentColor"
+              stroke-width="1.6" stroke-linejoin="round" />
+            <circle cx="12" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6" />
+          </svg>
+          <span>No. 7, Appar Samy Koil St, Mylapore, Chennai – 04</span>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://github.com/RajaramRajaram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <path d="M9 18l-6-6 6-6M15 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/rajaramdeveloper/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <circle cx="7" cy="17" r="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <circle cx="17" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="M9.5 15l5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://rajaram-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="M3 12h18M12 3a13 13 0 010 18 13 13 0 010-18z" fill="none" stroke="currentColor"
+                stroke-width="1.6" />
+            </svg>
+            Older Portfolio
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> S. Rajaram. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
