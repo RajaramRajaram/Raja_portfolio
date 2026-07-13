@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty Parlour App — Case Study</title>
+    <meta name="description"
+        content="A React Native booking app for beauty parlours — case study: process, tech stack, features, and lessons learned." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="beauty.css" />
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav">
+        <div class="container nav__inner">
+            <a href="#" class="nav__back">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5" />
+                    <path d="M12 19l-7-7 7-7" />
+                </svg>
+                Back
+            </a>
+            <span class="nav__tag">Case&nbsp;Study</span>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__copy">
+                    <p class="eyebrow">Mobile App · React Native</p>
+                    <h1 class="hero__title">Beauty Parlour App</h1>
+                    <p class="hero__subtitle">
+                        A modern React Native application built to simplify daily operations for beauty parlours by
+                        digitizing customer records, appointments, and billing.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="https://drive.google.com/file/d/1Eg5_Aq2o4690Jtartc-VU-rMgaDNNlYg/view?usp=sharing"
+                            class="btn btn--primary">
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6" />
+                                <path d="M10 14L21 3" />
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                            </svg>
+                            View Live Demo
+                        </a>
+                        <a href="https://github.com/RajaramRajaram/BeautyParlour_app" class="btn btn--ghost">
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                            </svg>
+                            Source Code
+                        </a>
+                    </div>
+
+                    <dl class="hero__meta">
+                        <div>
+                            <dt>Role</dt>
+                            <dd>Full-stack Mobile Developer</dd>
+                        </div>
+                        <div>
+                            <dt>Timeline</dt>
+                            <dd>6 weeks</dd>
+                        </div>
+                        <div>
+                            <dt>Platform</dt>
+                            <dd>Android</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="phone-mockup" aria-hidden="true">
+                        <div class="phone-mockup__notch"></div>
+                        <div class="phone-mockup__screen">
+                            <div class="mock-app">
+                                <div class="mock-app__status">
+                                    <span>9:41</span>
+                                    <span class="mock-app__icons">•••</span>
+                                </div>
+                                <div class="mock-app__header">
+                                    <h3>Beauty Parlour Aop</h3>
+                                    <p>Made with React Native (Expo)</p>
+                                </div>
+                                <div class="mock-app__card">
+                                    <div class="mock-app__card-img"></div>
+                                    <div>
+                                        <p class="mock-app__card-title">Hair Spa</p>
+                                        <p class="mock-app__card-sub">45 min · ₹899</p>
+                                    </div>
+                                </div>
+                                <div class="mock-app__card">
+                                    <div class="mock-app__card-img"></div>
+                                    <div>
+                                        <p class="mock-app__card-title">Bridal Makeup</p>
+                                        <p class="mock-app__card-sub">120 min · ₹4999</p>
+                                    </div>
+                                </div>
+                                <button class="mock-app__cta">Scroll Down</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section" id="about">
+            <div class="container">
+                <p class="eyebrow">01 — Overview</p>
+                <h2 class="section__title">About the project</h2>
+                <p class="couplet">"Customer Management & Invoice System"</p>
+                <div class="about__body">
+                    <p>
+                        Many small beauty parlours still rely on notebooks or spreadsheets to manage customer
+                        information and billing. This often leads to misplaced records, billing errors, and difficulty
+                        tracking returning customers.
+                    </p>
+                    <p>
+                        The Beauty Parlour App was developed to solve these problems by providing a centralized digital
+                        platform where salon owners can securely store customer details, generate invoices, and access
+                        previous visit history from their mobile devices.
+                    </p>
+                    <p>
+                        The application is designed with simplicity in mind, allowing even non-technical users to manage
+                        their business efficiently.
+                    </p>
+                    <p>
+                        I owned the project end-to-end: designing the UX flow, building the
+                        React Native client, and wiring up the backend that powers bookings,
+                        notifications, and payments.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TECH STACK ================= -->
+        <section class="section section--soft" id="tech-stack">
+            <div class="container">
+                <p class="eyebrow">02 — Under the Hood</p>
+                <h2 class="section__title">Tech stack</h2>
+                <div class="stack-grid">
+                    <div class="stack-card">
+                        <span class="stack-card__label">Frontend</span>
+                        <ul>
+                            <li>React Native (Expo)</li>
+                            <li>React Navigation</li>
+                            <li>Redux Toolkit</li>
+                            <li>Reanimated 2</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card">
+                        <span class="stack-card__label">Backend</span>
+                        <ul>
+                            <li>Node.js + Express</li>
+                            <li>Firebase storage</li>
+                        </ul>
+                    </div>
+                    <div class="stack-card">
+                        <span class="stack-card__label">Services</span>
+                        <ul>
+                            <li>Firebase Auth</li>
+                            <li>Expo EAS Build</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="stack-card">
+                        <span class="stack-card__label">Tooling</span>
+                        <ul>
+                            <li>TypeScript</li>
+                            <li>ESLint + Prettier</li>
+                            <li>Figma</li>
+                            <li>GitHub Actions</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FEATURES ================= -->
+        <section class="section" id="features">
+            <div class="container">
+                <p class="eyebrow">03 — Capabilities</p>
+                <h2 class="section__title">Features</h2>
+                <div class="features-grid">
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                        <h3>Customer Registration</h3>
+                        <p>Store important customer details including:
+                        </p>
+                        <p>
+                            Name,</p>
+                        <p>Phone Number,</p>
+                        <p>Mail,</p>
+                        <p>Date of Birth.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        <h3>Customer Management</h3>
+                        <p>View all registered customers in a searchable list.
+                        </p>
+                        <p> Features include:
+
+                            Edit customer information
+                            Delete customer records
+                            Search by name
+                            Quick customer lookup</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 8v4l3 3" />
+                            <circle cx="12" cy="12" r="9" />
+                        </svg>
+                        <h3>Invoice Generation</h3>
+                        <p>Generate professional invoices for every visit.
+                            Invoice includes:</p>
+
+                        <p>Customer Name</p>
+                        <p>Services Provided</p>
+                        <p>Price</p>
+                        <p>Total Amount</p>
+                        <p>Date</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2" />
+                            <path d="M2 10h20" />
+                        </svg>
+                        <h3>Visit History</h3>
+                        <p>Every customer maintains a complete history of previous visits.
+                        </p>
+                        <p>
+                            This allows salon owners to:</p>
+                        <p>
+                            Remember previous treatments,
+                            Track customer preferences,
+                            Improve customer service.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                        </svg>
+                        <h3>Secure Authentication</h3>
+                        <p>Firebase Authentication ensures that only authorized users can access business data.
+                        </p>
+                        <p>
+                            Features:</p>
+                        <p>
+                            Secure Login,
+                            User Authentication,
+                            Protected Database Access.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg class="icon feature-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3v18h18" />
+                            <path d="M18 17V9M13 17V5M8 17v-3" />
+                        </svg>
+                        <h3>Cloud Storage</h3>
+                        <p>All customer information is stored securely in Firebase Firestore.
+                        </p>
+                        <p>
+                            Benefits include:</p>
+                        <p>
+                            Real-time updates,
+                            Secure cloud backup,
+                            Fast data retrieval,
+                            Reliable storage.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+        <section class="section section--soft" id="gallery">
+            <div class="container">
+                <p class="eyebrow">04 — Screens</p>
+                <h2 class="section__title">Gallery</h2>
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- 8 screenshot placeholders -->
+                    <button class="gallery-item" data-caption="Home — nearby salons">
+                        <img class="gallery-item__frame" src="beauty_pics/login.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Login Page</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Salon detail page">
+                        <img class="gallery-item__frame" src="beauty_pics/home.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Home Screen </span>
+                    </button>
+                    <button class="gallery-item" data-caption="Service selection">
+                        <img class="gallery-item__frame" src="beauty_pics/add.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Add Clients</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Slot picker calendar">
+                        <img class="gallery-item__frame" src="beauty_pics/clients.png"
+                            alt="Home screen showing nearby salons">
+                        <span>All Clients</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Checkout & payment">
+                        <img class="gallery-item__frame" src="beauty_pics/invoices.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Invoice Creation</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Booking confirmation">
+                        <img class="gallery-item__frame" src="beauty_pics/clientinvoice.png"
+                            alt="Home screen showing nearby salons">
+                        <span>All Invoices</span>
+                    </button>
+                    <button class="gallery-item" data-caption="My appointments list">
+                        <img class="gallery-item__frame" src="beauty_pics/services.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Manage Services</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Owner dashboard overview">
+                        <img class="gallery-item__frame" src="beauty_pics/staffs.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Manage Staffs</span>
+                    </button>
+                    <button class="gallery-item" data-caption="Owner dashboard overview">
+                        <img class="gallery-item__frame" src="beauty_pics/dash.png"
+                            alt="Home screen showing nearby salons">
+                        <span>Income Dashboard</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DEMO VIDEO ================= -->
+        <section class="section" id="demo-video">
+            <div class="container">
+                <p class="eyebrow">05 — Walkthrough</p>
+                <h2 class="section__title">Demo video</h2>
+                <div class="video-frame">
+                    <!-- <video width="800" height="400" controls>
+                        <source
+                            src="https://drive.google.com/file/d/1Eg5_Aq2o4690Jtartc-VU-rMgaDNNlYg/view?usp=drive_link"
+                            type="video/mp4">
+                    </video> -->
+                    <iframe src="https://drive.google.com/file/d/1Eg5_Aq2o4690Jtartc-VU-rMgaDNNlYg/preview" width="800"
+                        height="400"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CHALLENGES ================= -->
+        <section class="section section--soft" id="challenges">
+            <div class="container">
+                <p class="eyebrow">06 — Problems Solved</p>
+                <h2 class="section__title">Challenges</h2>
+                <div class="challenge-list">
+                    <div class="challenge-item">
+                        <h3>Designing an Easy-to-Use Interface</h3>
+                        <p>
+                            The application needed to be simple enough for beauty parlour staff with limited technical
+                            knowledge.
+                        </p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Managing Real-Time Data</h3>
+                        <p>
+                            Firebase Firestore was integrated to synchronize customer information across sessions.
+                        </p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Data Validation</h3>
+                        <p>
+                            Implemented validation to prevent incomplete customer records and invalid invoice entries.
+                        </p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Performance Optimization</h3>
+                        <p>
+                            Optimized Firestore queries to ensure fast loading even with a large customer database.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHAT I LEARNED ================= -->
+        <section class="section" id="learned">
+            <div class="container">
+                <p class="eyebrow">07 — Retrospective</p>
+                <h2 class="section__title">What I learned</h2>
+                <ul class="learned-list">
+                    <li>
+                        <span class="learned-list__mark">→</span>
+                        React Native Development (Expo Framework)
+                    </li>
+                    <li>
+                        <span class="learned-list__mark">→</span>
+                        Firebase Authentication
+                    </li>
+                    <li>
+                        <span class="learned-list__mark">→</span>
+                        Cloud Firestore
+                    </li>
+                    <li>
+                        <span class="learned-list__mark">→</span>
+                        State Management
+                    </li>
+                    <li>
+                        <span class="learned-list__mark">→</span>
+                        Responsive Mobile Interfaces
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div>
+                <p class="footer__brand">Beauty Parlour App</p>
+                <p class="footer__tag">A React Native case study by Rajaram</p>
+            </div>
+            <div class="footer__links">
+                <a href="https://github.com/RajaramRajaram/BeautyParlour_app">GitHub</a>
+                <a href="https://drive.google.com/file/d/1Eg5_Aq2o4690Jtartc-VU-rMgaDNNlYg/view?usp=sharing">Live
+                    Demo</a>
+                <a href="#about">Back to top</a>
+            </div>
+        </div>
+        <p class="section__footnote footer__note container">© 2026 Rajaram · Built with React Native &amp; Expo</p>
+    </footer>
+
+    <!-- Lightbox for gallery -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close">&times;</button>
+        <div class="lightbox__frame" id="lightboxFrame"></div>
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="beauty.js"></script>
+</body>
+
+</html>
