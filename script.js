@@ -1,6 +1,15 @@
 (function () {
   "use strict";
 
+  const flipImages = document.querySelectorAll('.project-card-flip img');
+
+  flipImages.forEach(image => {
+    image.addEventListener('click', (event) => {
+      // Find the closest parent with the flip class and remove it
+      event.currentTarget.closest('.project-card-flip').classList.remove('is-flipped');
+    });
+  });
+
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- Footer year ---------- */

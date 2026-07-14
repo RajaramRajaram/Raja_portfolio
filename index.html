@@ -219,15 +219,44 @@
             </a>
           </article>
 
-          <article class="project-card">
+          <!-- <article class="project-card">
             <span class="project-card__tag">Training program · 2025</span>
             <h3>Java Full Stack Development</h3>
             <p>A 3-month training program at Tata Strive covering Java, Spring Boot, MySQL, and front-end basics through
               hands-on projects.</p>
             <div class="tags tags--small"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React /
                 Angular</span></div>
-          </article>
 
+          </article> -->
+          <div class="project-card-flip">
+            <div class="project-card-flip__inner">
+
+              <!-- FRONT -->
+              <article class="project-card project-card--front">
+                <span class="project-card__tag">Training program · 2025</span>
+                <h3>Java Full Stack Development</h3>
+                <p>A 3-month training program at Tata Strive covering Java, Spring Boot, MySQL, and front-end basics
+                  through
+                  hands-on projects.</p>
+                <div class="tags tags--small"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>React /
+                    Angular</span></div>
+                <a class="project-card__link" onclick="this.closest('.project-card-flip').classList.add('is-flipped')">
+                  View Certificate
+                  <svg viewBox="0 0 24 24" class="icon icon--sm" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+
+              </article>
+
+              <!-- BACK -->
+              <article class="project-card project-card--back">
+                <img src="certificates/JFSD.jpg" alt="Java Full Stack Development Certificate" class="cert-img">
+              </article>
+
+            </div>
+          </div>
           <article class="project-card">
             <span class="project-card__tag">React Game App · 2026</span>
             <h3>Vedigundu a Game</h3>
